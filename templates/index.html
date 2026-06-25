@@ -198,12 +198,15 @@
 
     }
 
-    nav ul{
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
 
-        flex-direction:column;
-        width:100%;
-        gap:15px;
-
+    nav ul.show {
+        display: flex;
     }
 
     nav ul li{
