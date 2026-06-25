@@ -76,7 +76,7 @@
         h1 { font-size: 62px; font-weight: 800; line-height: 1.15; margin: 0 0 24px 0; letter-spacing: -1.5px; }
         h1 span { background: var(--primary-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-container p { color: var(--text-dim); font-size: 19px; line-height: 1.6; max-width: 750px; margin: 0 auto 44px auto; }
-        .btn-action { background: var(--primary-grad); color: #000; padding: 18px 44px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; box-shadow: 0 4px 25px rgba(0, 242, 254, 0.25); display: inline-block; }
+        .btn-action { background: var(--primary-grad); color: #000; padding: 18px 100%; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; box-shadow: 0 4px 25px rgba(0, 242, 254, 0.25); display: inline-block; }
 
         /* METRIK STATISTIK */
         #metrics { background: #070a12; }
@@ -267,13 +267,20 @@
             h2{ font-size:26px; }
             p{ font-size:15px; }
             .hero-chip{ font-size:11px; }
-            .btn-action{ width:100%; margin-top:10px; }
             .drag-container{ padding:30px 15px; }
             .preview-card{ padding:18px; }
             .preview-card .value{ font-size:26px; }
             .result-main-status{ font-size:24px; }
             .metric-lbl{ flex-direction:column; gap:6px; }
-        }
+
+            .btn-action {
+              display: block;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 16px 15px;
+              text-align: center;
+            }
+          }
     </style>
 </head>
 <body>
